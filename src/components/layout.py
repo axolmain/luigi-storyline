@@ -1,9 +1,6 @@
 from typing import List, Tuple
 from fasthtml.common import *
 
-from src import main
-
-
 def create_layout(content, title: str = "Navigation", max_width: str = "max-w-3xl"):
     js = """
     document.addEventListener('DOMContentLoaded', () => {

@@ -1,4 +1,4 @@
-from src.components.library import *
+fromcomponents.library import *
 
 
 def build_landing_page():

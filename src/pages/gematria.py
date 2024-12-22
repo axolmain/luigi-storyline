@@ -2,7 +2,7 @@
 
 from fasthtml.common import *
 
-from src.components.library import (
+fromcomponents.library import (
     build_card,
     build_callout,
     build_pokemon_card

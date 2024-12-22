@@ -1,6 +1,6 @@
-from src.pages.gematria import build_gematria_page
-from src.components.layout import *
-from src.pages.index import build_landing_page
+frompages.gematria import build_gematria_page
+fromcomponents.layout import *
+frompages.index import build_landing_page
 
 # Initialize app
 app, rt = fast_app()
