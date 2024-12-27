@@ -1,15 +1,10 @@
-fromcomponents.library import *
+from components.library import *
 
 
 def build_landing_page():
     """
     Returns a modern landing page for "TikTok vs The Media: Luigi Mangione & UnitedHealthcare."
     """
-    modal = build_modal(Div(
-        P("This is the modal body."),
-        Button("Close", cls="btn btn-secondary", data_bs_dismiss="modal"),
-        cls="modal-body"
-    ))
     return Main(
         Div(
             # HERO / HEADER
@@ -18,7 +13,6 @@ def build_landing_page():
                     'Welcome to TikTok vs "The Media": Luigi Mangione & UnitedHealthcare',
                     cls="text-3xl sm:text-4xl font-extrabold text-center mb-4"
                 ),
-                modal,
                 P(
                     (
                         "In the aftermath of the tragic events surrounding UnitedHealthcare "

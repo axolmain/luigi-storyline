@@ -1,6 +1,6 @@
-frompages.gematria import build_gematria_page
-fromcomponents.layout import *
-frompages.index import build_landing_page
+from pages.gematria import build_gematria_page
+from components.layout import *
+from pages.index import build_landing_page
 
 # Initialize app
 app, rt = fast_app()
@@ -15,13 +15,13 @@ links = [
 @rt("/")
 def get():
     content = build_landing_page()
-    return create_layout(content, "Navigation")
+    return create_layout(content, links, "Navigation")
 
 
 @rt("/268-gematria")
 def get():
     content = build_gematria_page()
-    return create_layout(content, "Navigation")
+    return create_layout(content, links, "Navigation")
 
 
 @rt("/{fname:path}.{ext:static}")
